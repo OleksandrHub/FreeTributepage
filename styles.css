@@ -1,0 +1,82 @@
+:root{
+    --main-bg-color: #2C3E50;
+    --main-block-bg-color: #00000046;
+    --main-text-color: #F1C40F;
+    --main-link-color: #E74C3C;
+    --main-link-hover-color: #d14333;
+    --font-size: clamp(0.5rem, 0.4107rem + 0.9524vw, 1.125rem);
+}
+*{
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+}
+html{
+    font-size:var(--font-size);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+strong,a, span{
+    color: var(--main-link-color);
+}
+body{
+    font-family: 'Playwrite AU SA', serif;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+}
+header, footer, section{
+    background-color: var(--main-block-bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+/* Header */
+header h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+header p{
+    text-align: center;
+}
+/* Image */
+#img-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#image{
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+/* Section */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section > *{
+    width: 60%;
+}
+section h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+section span{
+    text-align: right;
+}
+/* Footer */
+footer p{
+    text-align: center;
+}
+footer a:hover{
+    color: var(--main-link-hover-color);
+}
